@@ -56,11 +56,16 @@ In the root directory there is a file called **PokeManager.bat**. Open it with y
 
 ```python ".\pogo\demo.py" -a google -u "user@gmail.com" -p "password"```
 
-Replace the email, password, and coordinates (coordinates can also be a location that Google recognises)
+Replace the email and password.
 
 Run PokeManager.bat. There should be a menu presented to you. Follow along. Don't try to break it - you will.
 
 If you want to use PTC, change `-a google` to `-a ptc`  
+
+If you want to use a starting location, insert the coordinates after your password/App Password (coordinates can also be a location that Google recognises).  It would now look like this:
+
+```python ".\pogo\demo.py" -a google -u "user@gmail.com" -p "password" -l "lat, lon"```
+
 
 ### Using Docker
 If you have docker installed, you can build this locally using the supplied Dockerfile: 
